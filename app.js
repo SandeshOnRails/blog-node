@@ -17,12 +17,8 @@ mongoose.Promise = global.Promise;
 
 mongoose.connect("mongodb://sandesh:sandesh1@ds163510.mlab.com:63510/bloggist", {
     useMongoClient:true
-}).then( ()=> {
-    console.log("Database connected");
-}).catch( (err)=> {
-   console.log(err);
-})
-
+}) .then(() => console.log('MongoDB Connected...'))
+  .catch(err => console.log(err));
 //Passport configuration
 
 app.use(require("express-session")({
