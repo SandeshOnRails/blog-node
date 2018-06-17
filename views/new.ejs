@@ -1,0 +1,30 @@
+<% include partials/header %>
+<style>
+    #newpost{
+        margin-top: 100px;
+    }
+
+
+</style>
+<div class ="ui main text container segment" id="newpost">
+<div class="ui huge header"> New Post</div>
+
+<form class ="ui form" action="/blogs" method="post">
+    <div class="field">
+    <label>Title</label>
+        <input type="text" name ="blog[title]" placeholder="Title of the blog">
+     </div>
+ <div class="field">
+    <label>Image</label>
+        <input type="text" name ="blog[image]" placeholder="Title of the blog">
+     </div>
+     <div class="field">
+    <label>Blog Content</label>
+         <textarea name="blog[body]"></textarea>
+     </div>
+<input class="ui black basic button" type="submit">
+</form>
+</div>
+
+
+<% include partials/footer %>
