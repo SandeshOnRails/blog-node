@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
 //mongoose configuration
-mongoose.connect("mongodb://sandesh:sandesh@ds125479.mlab.com:25479/blog", {
+mongoose.connect("mongodb://sandesh:sandesh1@ds163510.mlab.com:63510/bloggist", {
     useMongoClient:true
 });
 
