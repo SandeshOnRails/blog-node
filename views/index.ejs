@@ -10,7 +10,7 @@
 <% blogs.forEach(function(blog){ %>
     <div id="posts">
         <h2> <%= blog.title %> </h2>
-       <img src = "<%=blog.image %>">
+       <img src = "<%=blog.image %>" style="height:100px;width:100px">
        <span><%=blog.created %></span>
     <p> <%= blog.body.substring(0, 100) %> </p>
         <a href="/blogs/<%= blog._id  %>"> Read more</a>
