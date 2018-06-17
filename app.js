@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://sandesh:sandesh1@ds163510.mlab.com:63510/bloggist", {
+mongoose.connect("mongodb://basnet:basnet1@ds163510.mlab.com:63510/bloggist", {
     useMongoClient:true
 }) .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
